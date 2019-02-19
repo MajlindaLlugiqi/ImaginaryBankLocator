@@ -10,6 +10,7 @@ import UIKit
 
 class tabview: UIViewController {
 
+    @IBOutlet weak var tabItem: UITabBarItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 

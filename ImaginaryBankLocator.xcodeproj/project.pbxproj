@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C1037D6221C04BF006F773F /* InfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C1037D5221C04BF006F773F /* InfoWindow.xib */; };
+		6C1037D8221C0DA8006F773F /* CustomInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1037D7221C0DA8006F773F /* CustomInfoWindow.swift */; };
+		6C1037DB221C3D05006F773F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1037DA221C3D05006F773F /* Color.swift */; };
+		6C1037DE221C6F9A006F773F /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1037DD221C6F9A006F773F /* ExtensionView.swift */; };
+		6C1037E0221C6FD1006F773F /* ExtensionUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1037DF221C6FD1006F773F /* ExtensionUINavigationBar.swift */; };
 		6CA0B6A5221837A200EBF393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6A4221837A200EBF393 /* AppDelegate.swift */; };
-		6CA0B6A7221837A200EBF393 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6A6221837A200EBF393 /* ViewController.swift */; };
 		6CA0B6AA221837A200EBF393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0B6A8221837A200EBF393 /* Main.storyboard */; };
 		6CA0B6AD221837A200EBF393 /* ImaginaryBankLocator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6AB221837A200EBF393 /* ImaginaryBankLocator.xcdatamodeld */; };
 		6CA0B6AF221837A400EBF393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0B6AE221837A400EBF393 /* Assets.xcassets */; };
 		6CA0B6B2221837A400EBF393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0B6B0221837A400EBF393 /* LaunchScreen.storyboard */; };
 		6CA0B6BD221837A400EBF393 /* ImaginaryBankLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6BC221837A400EBF393 /* ImaginaryBankLocatorTests.swift */; };
 		6CA0B6C8221837A400EBF393 /* ImaginaryBankLocatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6C7221837A400EBF393 /* ImaginaryBankLocatorUITests.swift */; };
+		6CA0B6D92218496700EBF393 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6D82218496700EBF393 /* ListVC.swift */; };
+		6CA0B6DB22184A5B00EBF393 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6DA22184A5B00EBF393 /* MapVC.swift */; };
+		6CA0B6DE2218886900EBF393 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6DD2218886900EBF393 /* RoundedButton.swift */; };
+		6CA0B6E022188DF700EBF393 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6DF22188DF700EBF393 /* BaseVC.swift */; };
+		6CA0B6E42218945A00EBF393 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6E32218945A00EBF393 /* RoundedView.swift */; };
+		6CA0B6E72218966700EBF393 /* ListofBranchesATMsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6E62218966700EBF393 /* ListofBranchesATMsTVC.swift */; };
+		6CA0B6E922189C3400EBF393 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6E822189C3400EBF393 /* DetailsVC.swift */; };
+		6CA0B6EB2218AF7A00EBF393 /* PopUpWorkHoursTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6EA2218AF7A00EBF393 /* PopUpWorkHoursTVC.swift */; };
+		6CA0B6ED221981E600EBF393 /* BranchesAndATMsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6EC221981E600EBF393 /* BranchesAndATMsStruct.swift */; };
+		6CA0B6EF221991C900EBF393 /* IBL_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0B6EE221991C800EBF393 /* IBL_data.json */; };
+		6CA0B6F1221A1B2000EBF393 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0B6F0221A1B2000EBF393 /* DesignableUITextField.swift */; };
+		8B2967CDC911701C3D7B1AF6 /* Pods_ImaginaryBankLocatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA9E3EE8C19F00D839EB261 /* Pods_ImaginaryBankLocatorUITests.framework */; };
+		E32A945D80C132497B2412E1 /* Pods_ImaginaryBankLocatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36428227CAED6586D874B43A /* Pods_ImaginaryBankLocatorTests.framework */; };
+		EB5E8CB59F0343854F405F09 /* Pods_ImaginaryBankLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7790F4001C75E70EE880B6 /* Pods_ImaginaryBankLocator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +53,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		168071ABC2B46F07EE999379 /* Pods-ImaginaryBankLocatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImaginaryBankLocatorTests.release.xcconfig"; path = "Target Support Files/Pods-ImaginaryBankLocatorTests/Pods-ImaginaryBankLocatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		36428227CAED6586D874B43A /* Pods_ImaginaryBankLocatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImaginaryBankLocatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7790F4001C75E70EE880B6 /* Pods_ImaginaryBankLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImaginaryBankLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4678EAFFE87C772E18F2555B /* Pods-ImaginaryBankLocatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImaginaryBankLocatorUITests.release.xcconfig"; path = "Target Support Files/Pods-ImaginaryBankLocatorUITests/Pods-ImaginaryBankLocatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4FA9E3EE8C19F00D839EB261 /* Pods_ImaginaryBankLocatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImaginaryBankLocatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FAE0E5A4CEFB13223C22FC9 /* Pods-ImaginaryBankLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImaginaryBankLocator.debug.xcconfig"; path = "Target Support Files/Pods-ImaginaryBankLocator/Pods-ImaginaryBankLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		6C1037D5221C04BF006F773F /* InfoWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoWindow.xib; sourceTree = "<group>"; };
+		6C1037D7221C0DA8006F773F /* CustomInfoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInfoWindow.swift; sourceTree = "<group>"; };
+		6C1037DA221C3D05006F773F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		6C1037DD221C6F9A006F773F /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
+		6C1037DF221C6FD1006F773F /* ExtensionUINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUINavigationBar.swift; sourceTree = "<group>"; };
 		6CA0B6A1221837A200EBF393 /* ImaginaryBankLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImaginaryBankLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA0B6A4221837A200EBF393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6CA0B6A6221837A200EBF393 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6CA0B6A9221837A200EBF393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CA0B6AC221837A200EBF393 /* ImaginaryBankLocator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImaginaryBankLocator.xcdatamodel; sourceTree = "<group>"; };
 		6CA0B6AE221837A400EBF393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +77,20 @@
 		6CA0B6C3221837A400EBF393 /* ImaginaryBankLocatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImaginaryBankLocatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA0B6C7221837A400EBF393 /* ImaginaryBankLocatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaginaryBankLocatorUITests.swift; sourceTree = "<group>"; };
 		6CA0B6C9221837A400EBF393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA0B6D82218496700EBF393 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		6CA0B6DA22184A5B00EBF393 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		6CA0B6DD2218886900EBF393 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		6CA0B6DF22188DF700EBF393 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		6CA0B6E32218945A00EBF393 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		6CA0B6E62218966700EBF393 /* ListofBranchesATMsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListofBranchesATMsTVC.swift; sourceTree = "<group>"; };
+		6CA0B6E822189C3400EBF393 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		6CA0B6EA2218AF7A00EBF393 /* PopUpWorkHoursTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpWorkHoursTVC.swift; sourceTree = "<group>"; };
+		6CA0B6EC221981E600EBF393 /* BranchesAndATMsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesAndATMsStruct.swift; sourceTree = "<group>"; };
+		6CA0B6EE221991C800EBF393 /* IBL_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IBL_data.json; sourceTree = SOURCE_ROOT; };
+		6CA0B6F0221A1B2000EBF393 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+		A50758860C4E923FB6F881B6 /* Pods-ImaginaryBankLocatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImaginaryBankLocatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-ImaginaryBankLocatorUITests/Pods-ImaginaryBankLocatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBE7F1B63EA1B24CB7EDDA69 /* Pods-ImaginaryBankLocatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImaginaryBankLocatorTests.debug.xcconfig"; path = "Target Support Files/Pods-ImaginaryBankLocatorTests/Pods-ImaginaryBankLocatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E26557468D8A0EEE75A49D0B /* Pods-ImaginaryBankLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImaginaryBankLocator.release.xcconfig"; path = "Target Support Files/Pods-ImaginaryBankLocator/Pods-ImaginaryBankLocator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5E8CB59F0343854F405F09 /* Pods_ImaginaryBankLocator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32A945D80C132497B2412E1 /* Pods_ImaginaryBankLocatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +114,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2967CDC911701C3D7B1AF6 /* Pods_ImaginaryBankLocatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		345C8CBBDF5A6379056C2C88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A7790F4001C75E70EE880B6 /* Pods_ImaginaryBankLocator.framework */,
+				36428227CAED6586D874B43A /* Pods_ImaginaryBankLocatorTests.framework */,
+				4FA9E3EE8C19F00D839EB261 /* Pods_ImaginaryBankLocatorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BB736266209590159F1DCDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE0E5A4CEFB13223C22FC9 /* Pods-ImaginaryBankLocator.debug.xcconfig */,
+				E26557468D8A0EEE75A49D0B /* Pods-ImaginaryBankLocator.release.xcconfig */,
+				DBE7F1B63EA1B24CB7EDDA69 /* Pods-ImaginaryBankLocatorTests.debug.xcconfig */,
+				168071ABC2B46F07EE999379 /* Pods-ImaginaryBankLocatorTests.release.xcconfig */,
+				A50758860C4E923FB6F881B6 /* Pods-ImaginaryBankLocatorUITests.debug.xcconfig */,
+				4678EAFFE87C772E18F2555B /* Pods-ImaginaryBankLocatorUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6C1037D9221C0DAC006F773F /* CustomInfoWIndow */ = {
+			isa = PBXGroup;
+			children = (
+				6C1037D5221C04BF006F773F /* InfoWindow.xib */,
+				6C1037D7221C0DA8006F773F /* CustomInfoWindow.swift */,
+			);
+			path = CustomInfoWIndow;
+			sourceTree = "<group>";
+		};
+		6C1037DC221C6F77006F773F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6C1037DD221C6F9A006F773F /* ExtensionView.swift */,
+				6C1037DF221C6FD1006F773F /* ExtensionUINavigationBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		6CA0B698221837A200EBF393 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +169,8 @@
 				6CA0B6BB221837A400EBF393 /* ImaginaryBankLocatorTests */,
 				6CA0B6C6221837A400EBF393 /* ImaginaryBankLocatorUITests */,
 				6CA0B6A2221837A200EBF393 /* Products */,
+				5BB736266209590159F1DCDA /* Pods */,
+				345C8CBBDF5A6379056C2C88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,10 +188,13 @@
 			isa = PBXGroup;
 			children = (
 				6CA0B6A4221837A200EBF393 /* AppDelegate.swift */,
-				6CA0B6A6221837A200EBF393 /* ViewController.swift */,
-				6CA0B6A8221837A200EBF393 /* Main.storyboard */,
-				6CA0B6AE221837A400EBF393 /* Assets.xcassets */,
-				6CA0B6B0221837A400EBF393 /* LaunchScreen.storyboard */,
+				6CA0B6EE221991C800EBF393 /* IBL_data.json */,
+				6C1037DC221C6F77006F773F /* Extensions */,
+				6CA0B6DC221887F000EBF393 /* Helper */,
+				6CA0B6E52218962800EBF393 /* Cells */,
+				6CA0B6D6221837BF00EBF393 /* Views */,
+				6CA0B6D7221837CD00EBF393 /* Models */,
+				6CA0B6D5221837B600EBF393 /* Controllers */,
 				6CA0B6B3221837A400EBF393 /* Info.plist */,
 				6CA0B6AB221837A200EBF393 /* ImaginaryBankLocator.xcdatamodeld */,
 			);
@@ -128,6 +219,56 @@
 			path = ImaginaryBankLocatorUITests;
 			sourceTree = "<group>";
 		};
+		6CA0B6D5221837B600EBF393 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CA0B6DF22188DF700EBF393 /* BaseVC.swift */,
+				6CA0B6DA22184A5B00EBF393 /* MapVC.swift */,
+				6CA0B6D82218496700EBF393 /* ListVC.swift */,
+				6CA0B6E822189C3400EBF393 /* DetailsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6CA0B6D6221837BF00EBF393 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6CA0B6A8221837A200EBF393 /* Main.storyboard */,
+				6CA0B6AE221837A400EBF393 /* Assets.xcassets */,
+				6CA0B6B0221837A400EBF393 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6CA0B6D7221837CD00EBF393 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6CA0B6EC221981E600EBF393 /* BranchesAndATMsStruct.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6CA0B6DC221887F000EBF393 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6CA0B6DD2218886900EBF393 /* RoundedButton.swift */,
+				6C1037DA221C3D05006F773F /* Color.swift */,
+				6CA0B6E32218945A00EBF393 /* RoundedView.swift */,
+				6CA0B6F0221A1B2000EBF393 /* DesignableUITextField.swift */,
+				6C1037D9221C0DAC006F773F /* CustomInfoWIndow */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		6CA0B6E52218962800EBF393 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6CA0B6E62218966700EBF393 /* ListofBranchesATMsTVC.swift */,
+				6CA0B6EA2218AF7A00EBF393 /* PopUpWorkHoursTVC.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CA0B6CC221837A400EBF393 /* Build configuration list for PBXNativeTarget "ImaginaryBankLocator" */;
 			buildPhases = (
+				EEA0BA6B342109D7F9709862 /* [CP] Check Pods Manifest.lock */,
 				6CA0B69D221837A200EBF393 /* Sources */,
 				6CA0B69E221837A200EBF393 /* Frameworks */,
 				6CA0B69F221837A200EBF393 /* Resources */,
+				BF24B7B69C79443E71E4B729 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CA0B6CF221837A400EBF393 /* Build configuration list for PBXNativeTarget "ImaginaryBankLocatorTests" */;
 			buildPhases = (
+				75D13E5564504FA1AF79C925 /* [CP] Check Pods Manifest.lock */,
 				6CA0B6B4221837A400EBF393 /* Sources */,
 				6CA0B6B5221837A400EBF393 /* Frameworks */,
 				6CA0B6B6221837A400EBF393 /* Resources */,
@@ -170,6 +314,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CA0B6D2221837A400EBF393 /* Build configuration list for PBXNativeTarget "ImaginaryBankLocatorUITests" */;
 			buildPhases = (
+				F2AD0C631B679B767C3AF1F1 /* [CP] Check Pods Manifest.lock */,
 				6CA0B6BF221837A400EBF393 /* Sources */,
 				6CA0B6C0221837A400EBF393 /* Frameworks */,
 				6CA0B6C1221837A400EBF393 /* Resources */,
@@ -233,6 +378,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CA0B6B2221837A400EBF393 /* LaunchScreen.storyboard in Resources */,
+				6C1037D6221C04BF006F773F /* InfoWindow.xib in Resources */,
+				6CA0B6EF221991C900EBF393 /* IBL_data.json in Resources */,
 				6CA0B6AF221837A400EBF393 /* Assets.xcassets in Resources */,
 				6CA0B6AA221837A200EBF393 /* Main.storyboard in Resources */,
 			);
@@ -254,14 +401,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		75D13E5564504FA1AF79C925 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImaginaryBankLocatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF24B7B69C79443E71E4B729 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImaginaryBankLocator/Pods-ImaginaryBankLocator-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImaginaryBankLocator/Pods-ImaginaryBankLocator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEA0BA6B342109D7F9709862 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImaginaryBankLocator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2AD0C631B679B767C3AF1F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImaginaryBankLocatorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6CA0B69D221837A200EBF393 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CA0B6A7221837A200EBF393 /* ViewController.swift in Sources */,
+				6CA0B6DB22184A5B00EBF393 /* MapVC.swift in Sources */,
+				6CA0B6DE2218886900EBF393 /* RoundedButton.swift in Sources */,
+				6CA0B6E42218945A00EBF393 /* RoundedView.swift in Sources */,
+				6CA0B6EB2218AF7A00EBF393 /* PopUpWorkHoursTVC.swift in Sources */,
+				6CA0B6F1221A1B2000EBF393 /* DesignableUITextField.swift in Sources */,
+				6C1037E0221C6FD1006F773F /* ExtensionUINavigationBar.swift in Sources */,
+				6CA0B6D92218496700EBF393 /* ListVC.swift in Sources */,
+				6CA0B6ED221981E600EBF393 /* BranchesAndATMsStruct.swift in Sources */,
 				6CA0B6A5221837A200EBF393 /* AppDelegate.swift in Sources */,
+				6CA0B6E022188DF700EBF393 /* BaseVC.swift in Sources */,
+				6C1037DB221C3D05006F773F /* Color.swift in Sources */,
+				6C1037DE221C6F9A006F773F /* ExtensionView.swift in Sources */,
 				6CA0B6AD221837A200EBF393 /* ImaginaryBankLocator.xcdatamodeld in Sources */,
+				6CA0B6E72218966700EBF393 /* ListofBranchesATMsTVC.swift in Sources */,
+				6C1037D8221C0DA8006F773F /* CustomInfoWindow.swift in Sources */,
+				6CA0B6E922189C3400EBF393 /* DetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +685,7 @@
 		};
 		6CA0B6CD221837A400EBF393 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FAE0E5A4CEFB13223C22FC9 /* Pods-ImaginaryBankLocator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +704,7 @@
 		};
 		6CA0B6CE221837A400EBF393 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26557468D8A0EEE75A49D0B /* Pods-ImaginaryBankLocator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +723,7 @@
 		};
 		6CA0B6D0221837A400EBF393 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE7F1B63EA1B24CB7EDDA69 /* Pods-ImaginaryBankLocatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +745,7 @@
 		};
 		6CA0B6D1221837A400EBF393 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 168071ABC2B46F07EE999379 /* Pods-ImaginaryBankLocatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +767,7 @@
 		};
 		6CA0B6D3221837A400EBF393 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A50758860C4E923FB6F881B6 /* Pods-ImaginaryBankLocatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +788,7 @@
 		};
 		6CA0B6D4221837A400EBF393 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4678EAFFE87C772E18F2555B /* Pods-ImaginaryBankLocatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

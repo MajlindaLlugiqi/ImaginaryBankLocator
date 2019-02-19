@@ -1,0 +1,6 @@
+framework module Pods_ImaginaryBankLocatorTests {
+  umbrella header "Pods-ImaginaryBankLocatorTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
