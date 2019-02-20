@@ -74,32 +74,16 @@ class DetailsVC: BaseVC, UITableViewDataSource, UITableViewDelegate {
         lblEmail.text = currentATMorBranch?.email
         lblWebsite.text = currentATMorBranch?.website
       
-        setGradientBackground()
+        
 
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        NotificationCenter.default.addObserver(self, selector: #selector(deviceRotated), name: UIDevice.orientationDidChangeNotification, object: nil)
-//    }
-//    
-//    override func viewWillDisappear(_ animated: Bool) {
-//        NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
-//    }
-//    
-//    @objc func deviceRotated(){
-//        if UIDevice.current.orientation.isLandscape {
-//            setGradientBackground()
-//            
-//        } else {
-//            
-//            setGradientBackground()
-//        }
-//    }
-
+    //on workHours tap
     @objc func tapWorkHours(recognizer: UITapGestureRecognizer) {
       popUpWorkHours.isHidden = false
       popUpWorkHours.alpha = 0.9
         
     }
+    //check if the ATM or Branch is open or clodes
     func checkIfOpen()->Bool{
        // var status = false
         let date = Date()
@@ -125,9 +109,7 @@ class DetailsVC: BaseVC, UITableViewDataSource, UITableViewDelegate {
                 if(now >= from && now <= to){
                     return true
                 }
-                
-                
-                
+ 
             }
             else if(day == "Tuesday" && currentATMorBranch?.working_hours![i].day == 1){
                 let now = Date()
@@ -249,9 +231,11 @@ class DetailsVC: BaseVC, UITableViewDataSource, UITableViewDelegate {
        
         return false
     }
+    //close button on popup view
     @IBAction func btnClosePopUp(_ sender: Any) {
         popUpWorkHours.isHidden = true
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if currentATMorBranch?.type == "branch"{
             return (currentATMorBranch?.working_hours?.count)!
@@ -262,19 +246,22 @@ class DetailsVC: BaseVC, UITableViewDataSource, UITableViewDelegate {
         
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "popUpWorkHoursTVC",for: indexPath as IndexPath) as? PopUpWorkHoursTVC
+        
+        //get data from response (json from file)
         let intDay = currentATMorBranch?.working_hours![indexPath.row].day
         let startH = currentATMorBranch?.working_hours![indexPath.row].start_hours
         let startM = currentATMorBranch?.working_hours![indexPath.row].start_minutes
         let endH = currentATMorBranch?.working_hours![indexPath.row].end_hours
         let endM = currentATMorBranch?.working_hours![indexPath.row].end_minutes
-        
-
+    
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "hh:mm"
     
+        //fill in cell's labels
         cell?.day.text = getDayString(dayInt: intDay!)
         cell?.hours.text = "\(String(format: "%02d", startH!)):\(String(format: "%02d", startM!))-\(String(format: "%02d", endH!)):\(String(format: "%02d", endM!))"
         
@@ -303,7 +290,7 @@ class DetailsVC: BaseVC, UITableViewDataSource, UITableViewDelegate {
         return cell!
     }
 
-//
+//get day from int
     func getDayString(dayInt: Int)-> String{
         switch dayInt {
         case 0:

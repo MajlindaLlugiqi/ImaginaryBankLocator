@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImaginaryBankLocator/Controllers/ListVC.swift"
-            timestampString = "572359076.6684279"
+            timestampString = "572360588.2044491"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImaginaryBankLocator/Controllers/ListVC.swift"
-            timestampString = "572359076.668483"
+            timestampString = "572360588.204542"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImaginaryBankLocator/Controllers/MapVC.swift"
-            timestampString = "572359076.668527"
+            timestampString = "572360588.204589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
-            landmarkName = "setUpMap()"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "btnMyLocation(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImaginaryBankLocator/Controllers/DetailsVC.swift"
-            timestampString = "572359076.66857"
+            timestampString = "572360588.204632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "checkIfOpen()"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImaginaryBankLocator/Controllers/MapVC.swift"
-            timestampString = "572359076.668892"
+            timestampString = "572360588.2046731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "mapView(_:markerInfoWindow:)"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "setUpMap()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImaginaryBankLocator/Controllers/MapVC.swift"
-            timestampString = "572359076.6689349"
+            timestampString = "572360588.20471"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
@@ -106,13 +106,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImaginaryBankLocator/Controllers/MapVC.swift"
-            timestampString = "572359076.668972"
+            timestampString = "572360588.204747"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
-            landmarkName = "setUpMap()"
-            landmarkType = "7">
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "MapVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

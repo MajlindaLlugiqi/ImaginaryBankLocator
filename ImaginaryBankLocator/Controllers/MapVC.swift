@@ -24,9 +24,9 @@ class MapVC: BaseVC, CLLocationManagerDelegate, GMSMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpMap()
-        setGradientBackground()
-
         mapView.delegate = self
+        
+        //declare array of markers
         var arrayOfMarkers:[GMSMarker] = []
         
          //set buttonsGradient
@@ -88,30 +88,7 @@ class MapVC: BaseVC, CLLocationManagerDelegate, GMSMapViewDelegate {
         }
     
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        btnLocation.setGradientBackground(colorOne: UIColor(red: 177.0/255.0, green: 222.0/255.0, blue: 98.0/255.0, alpha: 1.0) , colorTwo: UIColor(red: 95.0/255.0, green: 152.0/255.0, blue: 57.0/255.0, alpha: 1.0))
-//        btnList.setGradientBackground(colorOne: UIColor(red: 177.0/255.0, green: 222.0/255.0, blue: 98.0/255.0, alpha: 1.0) , colorTwo: UIColor(red: 95.0/255.0, green: 152.0/255.0, blue: 57.0/255.0, alpha: 1.0))
-//        btnMyLocation.setGradientBackground(colorOne: UIColor(red: 43.0/255.0, green: 101.0/255.0, blue: 102.0/255.0, alpha: 1.0), colorTwo: UIColor(red: 143.0/255.0, green: 149.0/255.0, blue: 149.0/255.0, alpha: 1.0))
-//    }
-//    
-//    override func viewWillAppear(_ animated: Bool) {
-//        NotificationCenter.default.addObserver(self, selector: #selector(deviceRotated), name: UIDevice.orientationDidChangeNotification, object: nil)
-//    }
-//    
-//    override func viewWillDisappear(_ animated: Bool) {
-//        NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
-//    }
-//    
-//    @objc func deviceRotated(){
-//        if UIDevice.current.orientation.isLandscape {
-//           
-//            setGradientBackground()
-//            
-//        } else {
-//            
-//            setGradientBackground()
-//        }
-//    }
+  
     //infoWindow shown on marker's tap
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
         var infoWindow:CustomInfoWindow?
@@ -145,6 +122,7 @@ class MapVC: BaseVC, CLLocationManagerDelegate, GMSMapViewDelegate {
         }
         
     }
+    //set up map view
     func setUpMap(){
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -183,6 +161,7 @@ class MapVC: BaseVC, CLLocationManagerDelegate, GMSMapViewDelegate {
     @IBAction func btnLocation(_ sender: Any) {
         
     }
+    //locate camera in current location
     @IBAction func btnMyLocation(_ sender: Any) {
         currentLocation = locationManager.location
         let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: currentLocation.coordinate.latitude, longitude: currentLocation.coordinate.longitude, zoom: 12.0)

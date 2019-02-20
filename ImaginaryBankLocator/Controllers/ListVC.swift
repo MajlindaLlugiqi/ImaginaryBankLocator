@@ -20,38 +20,19 @@ class ListVC: BaseVC, UITableViewDataSource, UITableViewDelegate, UITextFieldDel
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpSearchtxt()
-        setGradientBackground()
+       
         currentList = response.data
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.navigationItem.title = "Mobile Assignment"
         searchtxt.delegate = self
         
+        //gradient color for buttons
         btnLocation.setGradientBackground(colorOne: UIColor(red: 177.0/255.0, green: 222.0/255.0, blue: 98.0/255.0, alpha: 1.0) , colorTwo: UIColor(red: 95.0/255.0, green: 152.0/255.0, blue: 57.0/255.0, alpha: 1.0))
         btnMyLocation.setGradientBackground(colorOne: UIColor(red: 177.0/255.0, green: 222.0/255.0, blue: 98.0/255.0, alpha: 1.0) , colorTwo: UIColor(red: 95.0/255.0, green: 152.0/255.0, blue: 57.0/255.0, alpha: 1.0))
         btnList.setGradientBackground(colorOne: UIColor(red: 43.0/255.0, green: 101.0/255.0, blue: 102.0/255.0, alpha: 1.0), colorTwo: UIColor(red: 143.0/255.0, green: 149.0/255.0, blue: 149.0/255.0, alpha: 1.0))
-      
-       
         
     }
-//
-//    override func viewWillAppear(_ animated: Bool) {
-//        NotificationCenter.default.addObserver(self, selector: #selector(deviceRotated), name: UIDevice.orientationDidChangeNotification, object: nil)
-//    }
-//    
-//    override func viewWillDisappear(_ animated: Bool) {
-//        NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
-//    }
-//    
-//    @objc func deviceRotated(){
-//        if UIDevice.current.orientation.isLandscape {
-//
-//            setGradientBackground()
-//            
-//        } else {
-//            
-//            setGradientBackground()
-//        }
-//    }
+    //on search textview tap
     func setUpSearchtxt(){
         searchtxt.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         
@@ -60,16 +41,19 @@ class ListVC: BaseVC, UITableViewDataSource, UITableViewDelegate, UITextFieldDel
         self.view.endEditing(true)
         return true
     }
+    //on search textview change
     @objc func textFieldDidChange(_ textField: UITextField) {
         searchBar()
-       
        tblListofATMsAndBranches.reloadData()
         
     }
+    
+    //navigate to mapVCN
     @IBAction func btnMyLocation(_ sender: Any) {
         self.navigateToView(name: "mapVCN")
     }
     
+    //searchbar funcionality
     func searchBar() {
         guard !(searchtxt.text?.isEmpty)! else {
             currentList = response.data
@@ -83,7 +67,6 @@ class ListVC: BaseVC, UITableViewDataSource, UITableViewDelegate, UITextFieldDel
         })
         
         tblListofATMsAndBranches.reloadData()
-        
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (currentList?.count)!
