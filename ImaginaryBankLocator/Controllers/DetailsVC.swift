@@ -77,6 +77,23 @@ class DetailsVC: BaseVC, UITableViewDataSource, UITableViewDelegate {
         setGradientBackground()
 
     }
+//    override func viewWillAppear(_ animated: Bool) {
+//        NotificationCenter.default.addObserver(self, selector: #selector(deviceRotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+//    }
+//    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
+//    }
+//    
+//    @objc func deviceRotated(){
+//        if UIDevice.current.orientation.isLandscape {
+//            setGradientBackground()
+//            
+//        } else {
+//            
+//            setGradientBackground()
+//        }
+//    }
 
     @objc func tapWorkHours(recognizer: UITapGestureRecognizer) {
       popUpWorkHours.isHidden = false
@@ -254,44 +271,38 @@ class DetailsVC: BaseVC, UITableViewDataSource, UITableViewDelegate {
         let endH = currentATMorBranch?.working_hours![indexPath.row].end_hours
         let endM = currentATMorBranch?.working_hours![indexPath.row].end_minutes
         
-       // set gradient
-        let gradient: CAGradientLayer = CAGradientLayer()
-        gradient.locations = [0.0 , 0.1, 1.0]
-        gradient.startPoint = CGPoint(x: 0.0, y: 1.0)
-        gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
-
-        let colorTop =  UIColor(red: 10.0/255.0, green: 159.0/255.0, blue: 159.0/255.0, alpha: 1.0).cgColor
-        let colorBottom = UIColor(red: 42.0/255.0, green: 99.0/255.0, blue: 99.0/255.0, alpha: 1.0).cgColor
-        gradientLayer.colors = [colorTop, colorBottom]
-        gradientLayer.frame = CGRect(x: 0.0, y: 0.0, width: cell!.bcgView.frame.size.width, height: cell!.bcgView.frame.size.height)
-
-//
-//        cell!.bcgView.layer.insertSublayer(gradientLayer, at: 0)
 
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "hh:mm"
     
         cell?.day.text = getDayString(dayInt: intDay!)
         cell?.hours.text = "\(String(format: "%02d", startH!)):\(String(format: "%02d", startM!))-\(String(format: "%02d", endH!)):\(String(format: "%02d", endM!))"
+        
+        //gradient
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.locations = [0.0 , 0.1, 1.0]
+        gradient.startPoint = CGPoint(x: 0.0, y: 1.0)
+        gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
+        let colorTop =  UIColor(red: 35.0/255.0, green: 154.0/255.0, blue: 156.0/255.0, alpha: 0.5).cgColor
+        let colorBottom = UIColor(red: 100.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0).cgColor
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorTop, colorBottom, colorTop]
+        
+        gradientLayer.locations = [0.0, 0.5, 1.0]
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
+        
+        var updatedFrame = (cell?.bcgView.bounds)!
+        
+        updatedFrame.size.height += (cell?.bcgView.frame.height)!
+        updatedFrame.size.width += (cell?.bcgView.frame.width)! + 90
+        
+        gradientLayer.frame = updatedFrame
+        cell?.bcgView.layer.insertSublayer(gradientLayer, at: 0)
 
         return cell!
     }
-//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//         //set gradient
-//        let gradient: CAGradientLayer = CAGradientLayer()
-//        gradient.locations = [0.0 , 0.1, 1.0]
-//        gradient.startPoint = CGPoint(x: 0.0, y: 1.0)
-//        gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
-//
-//        let colorTop =  UIColor(red: 10.0/255.0, green: 159.0/255.0, blue: 159.0/255.0, alpha: 1.0).cgColor
-//        let colorBottom = UIColor(red: 42.0/255.0, green: 99.0/255.0, blue: 99.0/255.0, alpha: 1.0).cgColor
-//        gradientLayer.colors = [colorTop, colorBottom]
-//        gradientLayer.frame = CGRect(x: 0.0, y: 0.0, width: cell.frame.size.width, height: cell.frame.size.height)
-//
-//
-//        cell.layer.insertSublayer(gradientLayer, at: 0)
-//
-//    }
+
 //
     func getDayString(dayInt: Int)-> String{
         switch dayInt {

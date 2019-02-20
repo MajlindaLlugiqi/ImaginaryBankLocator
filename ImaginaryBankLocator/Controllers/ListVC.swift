@@ -25,13 +25,33 @@ class ListVC: BaseVC, UITableViewDataSource, UITableViewDelegate, UITextFieldDel
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.navigationItem.title = "Mobile Assignment"
         searchtxt.delegate = self
-      
-        //set buttonsGradient
+        
         btnLocation.setGradientBackground(colorOne: UIColor(red: 177.0/255.0, green: 222.0/255.0, blue: 98.0/255.0, alpha: 1.0) , colorTwo: UIColor(red: 95.0/255.0, green: 152.0/255.0, blue: 57.0/255.0, alpha: 1.0))
         btnMyLocation.setGradientBackground(colorOne: UIColor(red: 177.0/255.0, green: 222.0/255.0, blue: 98.0/255.0, alpha: 1.0) , colorTwo: UIColor(red: 95.0/255.0, green: 152.0/255.0, blue: 57.0/255.0, alpha: 1.0))
         btnList.setGradientBackground(colorOne: UIColor(red: 43.0/255.0, green: 101.0/255.0, blue: 102.0/255.0, alpha: 1.0), colorTwo: UIColor(red: 143.0/255.0, green: 149.0/255.0, blue: 149.0/255.0, alpha: 1.0))
+      
+       
         
     }
+//
+//    override func viewWillAppear(_ animated: Bool) {
+//        NotificationCenter.default.addObserver(self, selector: #selector(deviceRotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+//    }
+//    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
+//    }
+//    
+//    @objc func deviceRotated(){
+//        if UIDevice.current.orientation.isLandscape {
+//
+//            setGradientBackground()
+//            
+//        } else {
+//            
+//            setGradientBackground()
+//        }
+//    }
     func setUpSearchtxt(){
         searchtxt.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         
@@ -85,10 +105,17 @@ class ListVC: BaseVC, UITableViewDataSource, UITableViewDelegate, UITextFieldDel
         return cell!
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let tappedListMember = currentList![indexPath.row]
-        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "detailsVC") as? DetailsVC
-        vc!.currentATMorBranch = tappedListMember
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "mapVC") as? MapVC
+        vc!.currentBank = tappedListMember
         self.navigationController?.pushViewController(vc!, animated: true)
+        
+        //go to details
+//        let tappedListMember = currentList![indexPath.row]
+//        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "detailsVC") as? DetailsVC
+//        vc!.currentATMorBranch = tappedListMember
+//        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
 }

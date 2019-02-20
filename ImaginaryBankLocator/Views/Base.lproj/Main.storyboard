@@ -23,14 +23,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFc-9y-BGq">
-                                <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="73w-SL-i6G">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <subviews>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xys-XW-Fvc" customClass="RoundedButton" customModule="ImaginaryBankLocator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="48"/>
-                                                <color key="backgroundColor" red="0.031372549019607843" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="50"/>
+                                                <color key="backgroundColor" red="0.36617171764373779" green="0.50184983015060425" blue="0.50588101148605347" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="My Location">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,7 +51,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ch-p5-DB7" customClass="RoundedButton" customModule="ImaginaryBankLocator" customModuleProvider="target">
-                                                <rect key="frame" x="125" y="0.0" width="125" height="48"/>
+                                                <rect key="frame" x="125" y="0.0" width="125" height="50"/>
                                                 <color key="backgroundColor" red="0.25582572817802429" green="0.57639569044113159" blue="0.57254797220230103" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <state key="normal" title="Location">
@@ -67,7 +67,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUT-mn-mQP" customClass="RoundedButton" customModule="ImaginaryBankLocator" customModuleProvider="target">
-                                                <rect key="frame" x="250.5" y="0.0" width="124.5" height="48"/>
+                                                <rect key="frame" x="250.5" y="0.0" width="124.5" height="50"/>
                                                 <color key="backgroundColor" red="0.64313725490196072" green="0.81176470588235294" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <state key="normal" title="List">
@@ -95,6 +95,7 @@
                                     <constraint firstAttribute="trailing" secondItem="73w-SL-i6G" secondAttribute="trailing" id="Bl2-VW-Tpc"/>
                                     <constraint firstItem="73w-SL-i6G" firstAttribute="leading" secondItem="wFc-9y-BGq" secondAttribute="leading" id="Pav-7v-IBC"/>
                                     <constraint firstAttribute="bottom" secondItem="73w-SL-i6G" secondAttribute="bottom" id="Q0a-ge-Rff"/>
+                                    <constraint firstAttribute="height" constant="50" id="fLY-rH-BO0"/>
                                     <constraint firstItem="73w-SL-i6G" firstAttribute="top" secondItem="wFc-9y-BGq" secondAttribute="top" id="mTM-07-mlo"/>
                                 </constraints>
                             </view>
@@ -108,7 +109,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oBw-bi-Fil" secondAttribute="bottom" id="YLL-Rk-EvO"/>
                             <constraint firstItem="oBw-bi-Fil" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cXW-uh-cse"/>
                             <constraint firstItem="oBw-bi-Fil" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hgh-ri-G2c"/>
-                            <constraint firstItem="wFc-9y-BGq" firstAttribute="height" secondItem="oBw-bi-Fil" secondAttribute="height" multiplier="0.08" id="ro1-o5-ESD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -136,7 +136,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J1L-1W-3nH">
-                                        <rect key="frame" x="20" y="50" width="335" height="495"/>
+                                        <rect key="frame" x="20" y="50" width="335" height="493"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
@@ -153,7 +153,7 @@
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8M-aa-PBk" customClass="RoundedView" customModule="ImaginaryBankLocator" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLe-Bw-vKm">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="XLe-Bw-vKm">
                                                                             <rect key="frame" x="10" y="15" width="43.5" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -180,8 +180,8 @@
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
                                                                 </view>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJa-to-4zT">
-                                                                    <rect key="frame" x="10" y="65" width="43.5" height="20.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="JJa-to-4zT">
+                                                                    <rect key="frame" x="10" y="65" width="315" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -192,10 +192,10 @@
                                                                 <constraint firstItem="g8M-aa-PBk" firstAttribute="leading" secondItem="d94-07-cXU" secondAttribute="leading" id="1GZ-xk-xpc"/>
                                                                 <constraint firstItem="JJa-to-4zT" firstAttribute="leading" secondItem="XLe-Bw-vKm" secondAttribute="leading" id="4Ki-gZ-hPZ"/>
                                                                 <constraint firstItem="JJa-to-4zT" firstAttribute="centerY" secondItem="d94-07-cXU" secondAttribute="centerY" multiplier="1.5" id="EGf-nw-N6a"/>
-                                                                <constraint firstItem="JJa-to-4zT" firstAttribute="trailing" secondItem="XLe-Bw-vKm" secondAttribute="trailing" id="QYu-ve-d0C"/>
                                                                 <constraint firstAttribute="trailing" secondItem="g8M-aa-PBk" secondAttribute="trailing" id="UII-YI-Tl4"/>
                                                                 <constraint firstAttribute="height" constant="100" id="Xg3-hx-wxK"/>
                                                                 <constraint firstItem="g8M-aa-PBk" firstAttribute="top" secondItem="d94-07-cXU" secondAttribute="top" id="YCT-TK-Q63"/>
+                                                                <constraint firstAttribute="trailing" secondItem="JJa-to-4zT" secondAttribute="trailing" constant="10" id="mtR-gh-Jfb"/>
                                                                 <constraint firstItem="g8M-aa-PBk" firstAttribute="height" secondItem="d94-07-cXU" secondAttribute="height" multiplier="0.5" id="v4M-tT-Qtq"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
@@ -227,13 +227,13 @@
                                         </connections>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYJ-hO-cTi">
-                                        <rect key="frame" x="0.0" y="555" width="375" height="48"/>
+                                        <rect key="frame" x="0.0" y="553" width="375" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TxC-S4-zIq">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i26-ZH-wlP" customClass="RoundedButton" customModule="ImaginaryBankLocator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="48"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="50"/>
                                                         <color key="backgroundColor" red="0.64313725490196072" green="0.81176470588235294" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <state key="normal" title="My Location">
@@ -249,7 +249,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMO-nO-MQE" customClass="RoundedButton" customModule="ImaginaryBankLocator" customModuleProvider="target">
-                                                        <rect key="frame" x="125" y="0.0" width="125" height="48"/>
+                                                        <rect key="frame" x="125" y="0.0" width="125" height="50"/>
                                                         <color key="backgroundColor" red="0.64313725489999995" green="0.81176470590000005" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <state key="normal" title="Location">
@@ -265,8 +265,8 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3r4-JX-eig" customClass="RoundedButton" customModule="ImaginaryBankLocator" customModuleProvider="target">
-                                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="48"/>
-                                                        <color key="backgroundColor" red="0.031372549019607843" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="50"/>
+                                                        <color key="backgroundColor" red="0.36612334847450256" green="0.50189512968063354" blue="0.50195884704589844" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <state key="normal" title="List">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -290,11 +290,13 @@
                                                 <constraints>
                                                     <constraint firstItem="EMO-nO-MQE" firstAttribute="width" secondItem="i26-ZH-wlP" secondAttribute="width" id="Vvf-ze-bUu"/>
                                                     <constraint firstItem="3r4-JX-eig" firstAttribute="width" secondItem="EMO-nO-MQE" secondAttribute="width" id="eRe-rO-aOe"/>
+                                                    <constraint firstItem="i26-ZH-wlP" firstAttribute="width" secondItem="3r4-JX-eig" secondAttribute="width" id="fIi-QP-tDe"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="DlG-JY-Gyg"/>
                                             <constraint firstItem="TxC-S4-zIq" firstAttribute="top" secondItem="lYJ-hO-cTi" secondAttribute="top" id="EcO-2o-pe4"/>
                                             <constraint firstItem="TxC-S4-zIq" firstAttribute="leading" secondItem="lYJ-hO-cTi" secondAttribute="leading" id="RmV-u0-dX8"/>
                                             <constraint firstAttribute="bottom" secondItem="TxC-S4-zIq" secondAttribute="bottom" id="SAc-P7-sTn"/>
@@ -328,7 +330,6 @@
                                     <constraint firstAttribute="trailing" secondItem="lYJ-hO-cTi" secondAttribute="trailing" id="DY9-US-Pmc"/>
                                     <constraint firstItem="J1L-1W-3nH" firstAttribute="top" secondItem="hrI-5H-3gN" secondAttribute="bottom" constant="5" id="ElB-Lg-bGk"/>
                                     <constraint firstItem="J1L-1W-3nH" firstAttribute="leading" secondItem="T7n-Oa-vp8" secondAttribute="leading" constant="20" id="Rda-ne-3RS"/>
-                                    <constraint firstItem="lYJ-hO-cTi" firstAttribute="height" secondItem="T7n-Oa-vp8" secondAttribute="height" multiplier="0.08" id="fk9-Ae-f2Q"/>
                                     <constraint firstAttribute="bottom" secondItem="lYJ-hO-cTi" secondAttribute="bottom" id="fqz-XX-mc7"/>
                                     <constraint firstItem="hrI-5H-3gN" firstAttribute="trailing" secondItem="J1L-1W-3nH" secondAttribute="trailing" id="m8e-ED-f8B"/>
                                     <constraint firstItem="hrI-5H-3gN" firstAttribute="top" secondItem="T7n-Oa-vp8" secondAttribute="top" constant="5" id="rIG-3L-z6Q"/>
@@ -372,14 +373,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="705"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFx-EU-Lc9">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="XFx-EU-Lc9">
                                             <rect key="frame" x="86.5" y="40" width="268.5" height="42"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGA-zy-End">
-                                            <rect key="frame" x="86.5" y="87" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="rGA-zy-End">
+                                            <rect key="frame" x="86.5" y="87" width="278.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -387,13 +388,13 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oW0-id-9mx" customClass="RoundedView" customModule="ImaginaryBankLocator" customModuleProvider="target">
                                             <rect key="frame" x="20" y="149.5" width="335" height="75"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Contact Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugf-zZ-NUx">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Contact Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Ugf-zZ-NUx">
                                                     <rect key="frame" x="20" y="10" width="111" height="23.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+234567" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nv5-KE-dtl">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+234567" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="nv5-KE-dtl">
                                                     <rect key="frame" x="20" y="43.5" width="250" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -427,13 +428,13 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1i-x2-Inf" customClass="RoundedView" customModule="ImaginaryBankLocator" customModuleProvider="target">
                                             <rect key="frame" x="20" y="229.5" width="335" height="71"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klC-Tj-1Ci">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="klC-Tj-1Ci">
                                                     <rect key="frame" x="20" y="10" width="85.5" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="+234567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGa-VM-9pa">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="+234567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="EGa-VM-9pa">
                                                     <rect key="frame" x="20" y="39.5" width="250" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -468,13 +469,13 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oe-fM-ACF" customClass="RoundedView" customModule="ImaginaryBankLocator" customModuleProvider="target">
                                             <rect key="frame" x="20" y="320.5" width="335" height="71"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thw-gg-UHk">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="thw-gg-UHk">
                                                     <rect key="frame" x="20" y="10" width="59.5" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+234567" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icW-y9-QQQ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+234567" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="icW-y9-QQQ">
                                                     <rect key="frame" x="20" y="39.5" width="250" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -509,13 +510,13 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjS-KB-EhV" customClass="RoundedView" customModule="ImaginaryBankLocator" customModuleProvider="target">
                                             <rect key="frame" x="20" y="396.5" width="335" height="71"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meeting Request" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZi-Wb-VKp">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meeting Request" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="jZi-Wb-VKp">
                                                     <rect key="frame" x="20" y="10" width="123" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+234567" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2h-Ci-FC2">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+234567" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="l2h-Ci-FC2">
                                                     <rect key="frame" x="20" y="39.5" width="250" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -548,13 +549,13 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEa-8m-Omn" customClass="RoundedView" customModule="ImaginaryBankLocator" customModuleProvider="target">
                                             <rect key="frame" x="20" y="472.5" width="335" height="71"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCu-kH-bJj">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="jCu-kH-bJj">
                                                     <rect key="frame" x="20" y="10" width="63" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="0.69860338184931503" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="+234567" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ua-FE-UAu">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="+234567" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="7Ua-FE-UAu">
                                                     <rect key="frame" x="20" y="39.5" width="250" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -590,13 +591,13 @@
                                                 <constraint firstAttribute="width" secondItem="0Qc-Np-NlZ" secondAttribute="height" multiplier="2:3" id="eYI-0p-55e"/>
                                             </constraints>
                                         </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3v5-PC-wxf" customClass="RoundedView" customModule="ImaginaryBankLocator" customModuleProvider="target">
+                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3v5-PC-wxf" customClass="RoundedView" customModule="ImaginaryBankLocator" customModuleProvider="target">
                                             <rect key="frame" x="15" y="144.5" width="345" height="416"/>
                                             <subviews>
                                                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aNJ-mU-dHK">
                                                     <rect key="frame" x="0.0" y="67" width="345" height="289"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="sectionIndexBackgroundColor" red="0.37161189317703247" green="0.59474050998687744" blue="0.22341930866241455" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <prototypes>
                                                         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="popUpWorkHoursTVC" rowHeight="70" id="axV-7M-cAo" customClass="PopUpWorkHoursTVC" customModule="ImaginaryBankLocator" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="28" width="345" height="70"/>
@@ -607,7 +608,7 @@
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3q-nB-CVR">
                                                                         <rect key="frame" x="20" y="69" width="305" height="1"/>
-                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="backgroundColor" red="0.38030561804771423" green="0.67037737369537354" blue="0.67843121290206909" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="1" id="gwz-xi-YVS"/>
                                                                         </constraints>
@@ -622,16 +623,16 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsU-PK-qgf">
-                                                                                <rect key="frame" x="10" y="14.5" width="49" height="40"/>
+                                                                                <rect key="frame" x="10" y="14.5" width="53.5" height="40"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="40" id="MiD-cb-hpW"/>
                                                                                 </constraints>
-                                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                                                                 <color key="textColor" red="0.16837206482887268" green="0.3998681902885437" blue="0.40392172336578369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" red="0.37674438953399658" green="0.69002377986907959" blue="0.69411712884902954" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <color key="backgroundColor" red="0.50116437673568726" green="0.76846325397491455" blue="0.77254754304885864" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="bottom" secondItem="BsU-PK-qgf" secondAttribute="bottom" constant="14.5" id="ANt-rm-18j"/>
                                                                             <constraint firstItem="ojG-Ci-mfI" firstAttribute="centerY" secondItem="BsU-PK-qgf" secondAttribute="centerY" id="Eji-UM-kcd"/>
@@ -730,6 +731,7 @@
                                         <constraint firstItem="fjS-KB-EhV" firstAttribute="top" secondItem="4oe-fM-ACF" secondAttribute="bottom" constant="5" id="7dd-pL-8tP"/>
                                         <constraint firstItem="y1i-x2-Inf" firstAttribute="top" secondItem="oW0-id-9mx" secondAttribute="bottom" constant="5" id="7eh-JI-K8f"/>
                                         <constraint firstItem="4oe-fM-ACF" firstAttribute="leading" secondItem="y1i-x2-Inf" secondAttribute="leading" id="9vw-GM-Yy7"/>
+                                        <constraint firstAttribute="trailing" secondItem="rGA-zy-End" secondAttribute="trailing" constant="10" id="Bgl-gR-Okz"/>
                                         <constraint firstItem="3v5-PC-wxf" firstAttribute="centerY" secondItem="RrS-lB-A1f" secondAttribute="centerY" id="EKg-P9-SYs"/>
                                         <constraint firstItem="HEa-8m-Omn" firstAttribute="leading" secondItem="fjS-KB-EhV" secondAttribute="leading" id="EQS-AC-Ain"/>
                                         <constraint firstItem="3v5-PC-wxf" firstAttribute="trailing" secondItem="oW0-id-9mx" secondAttribute="trailing" constant="5" id="EW9-Qy-Co6"/>

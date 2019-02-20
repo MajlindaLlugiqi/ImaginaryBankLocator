@@ -14,6 +14,7 @@ class MapVC: BaseVC, CLLocationManagerDelegate, GMSMapViewDelegate {
     @IBOutlet weak var btnMyLocation: UIButton!
     @IBOutlet weak var btnLocation: UIButton!
     @IBOutlet weak var mapView: GMSMapView!
+    var currentBank: DataD?
     
     var locationManager = CLLocationManager()
     var marker = GMSMarker()
@@ -32,6 +33,7 @@ class MapVC: BaseVC, CLLocationManagerDelegate, GMSMapViewDelegate {
         btnLocation.setGradientBackground(colorOne: UIColor(red: 177.0/255.0, green: 222.0/255.0, blue: 98.0/255.0, alpha: 1.0) , colorTwo: UIColor(red: 95.0/255.0, green: 152.0/255.0, blue: 57.0/255.0, alpha: 1.0))
         btnList.setGradientBackground(colorOne: UIColor(red: 177.0/255.0, green: 222.0/255.0, blue: 98.0/255.0, alpha: 1.0) , colorTwo: UIColor(red: 95.0/255.0, green: 152.0/255.0, blue: 57.0/255.0, alpha: 1.0))
         btnMyLocation.setGradientBackground(colorOne: UIColor(red: 43.0/255.0, green: 101.0/255.0, blue: 102.0/255.0, alpha: 1.0), colorTwo: UIColor(red: 143.0/255.0, green: 149.0/255.0, blue: 149.0/255.0, alpha: 1.0))
+        
      
         
         //MARKERS for branches and ATMs
@@ -65,22 +67,51 @@ class MapVC: BaseVC, CLLocationManagerDelegate, GMSMapViewDelegate {
                 self.marker.iconView = markerView
                 self.marker.map = self.mapView
             }
-            
+
             let positionL = CLLocationCoordinate2DMake(location.lat!, location.long!)
             arrayOfMarkers.append(GMSMarker(position: positionL))
             print(GMSMarker(position: positionL))
             print(arrayOfMarkers as Any)
         }
-        var bounds = GMSCoordinateBounds()
-        for marker in arrayOfMarkers
-        {
-            bounds = bounds.includingCoordinate(marker.position)
+        if(currentBank == nil){
+            var bounds = GMSCoordinateBounds()
+            for marker in arrayOfMarkers
+            {
+                bounds = bounds.includingCoordinate(marker.position)
+            }
+            let update = GMSCameraUpdate.fit(bounds, withPadding: 60)
+            mapView.animate(with: update)
         }
-        let update = GMSCameraUpdate.fit(bounds, withPadding: 60)
-        mapView.animate(with: update)
-        
+        else{
+            let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: (currentBank?.location?.lat)!, longitude: (currentBank?.location?.long)!, zoom: 12.0)
+            mapView.camera = camera
+        }
     
     }
+//    override func viewWillAppear(_ animated: Bool) {
+//        btnLocation.setGradientBackground(colorOne: UIColor(red: 177.0/255.0, green: 222.0/255.0, blue: 98.0/255.0, alpha: 1.0) , colorTwo: UIColor(red: 95.0/255.0, green: 152.0/255.0, blue: 57.0/255.0, alpha: 1.0))
+//        btnList.setGradientBackground(colorOne: UIColor(red: 177.0/255.0, green: 222.0/255.0, blue: 98.0/255.0, alpha: 1.0) , colorTwo: UIColor(red: 95.0/255.0, green: 152.0/255.0, blue: 57.0/255.0, alpha: 1.0))
+//        btnMyLocation.setGradientBackground(colorOne: UIColor(red: 43.0/255.0, green: 101.0/255.0, blue: 102.0/255.0, alpha: 1.0), colorTwo: UIColor(red: 143.0/255.0, green: 149.0/255.0, blue: 149.0/255.0, alpha: 1.0))
+//    }
+//    
+//    override func viewWillAppear(_ animated: Bool) {
+//        NotificationCenter.default.addObserver(self, selector: #selector(deviceRotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+//    }
+//    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
+//    }
+//    
+//    @objc func deviceRotated(){
+//        if UIDevice.current.orientation.isLandscape {
+//           
+//            setGradientBackground()
+//            
+//        } else {
+//            
+//            setGradientBackground()
+//        }
+//    }
     //infoWindow shown on marker's tap
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
         var infoWindow:CustomInfoWindow?
