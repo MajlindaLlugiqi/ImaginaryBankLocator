@@ -20,7 +20,7 @@ Furthermore, there is also the list of all Branches and ATMs, and by tapping the
 
 THIRD PARTIES
 -------------
-In this project I have user “Google Maps SDK” for iOS. To install you need to create pod file on the project path, then add ‘pod 'GoogleMaps'’ and then run ‘pod install’. 
+In this project I have used “Google Maps SDK” for iOS. To install you need to create pod file on the project path, then add ‘pod 'GoogleMaps'’ and then run ‘pod install’. 
 I have used Google Maps SDK because it is the best library that deals with Map issues. It is also more reliable compared to MapKit (it’s directions and local places are fine only in the US). Also remarkable route planning, multi-route planning, ultra filtered search results etc. 
 
 
